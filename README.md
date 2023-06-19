@@ -2,11 +2,11 @@
 ## Express REST API
 Author: Sham Al-Jalam
 
-* deployed application : []()
+* deployed application : [https://api-server-5vp7.onrender.com](https://api-server-5vp7.onrender.com)
 
-* Github actions: []()
+* Github actions: [https://github.com/ShamAhmad2022/api-server/actions](https://github.com/ShamAhmad2022/api-server/actions)
 
-*  pull request: []()
+*  pull request: [https://github.com/ShamAhmad2022/api-server/pull/2](https://github.com/ShamAhmad2022/api-server/pull/2)
 
 ### Setup:
 .env requirements:
