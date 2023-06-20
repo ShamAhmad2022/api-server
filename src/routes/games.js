@@ -26,7 +26,8 @@ async function updateGame(req, res){
     const id = req.params.id;
     const obj = req.body;
     const game = await Games.update(obj, {where: {id}});
-    res.status(202).json(game);
+    const updatedGame = await Games.findOne({ where:{id:id}});
+    res.status(202).json(updatedGame);
 }
 
 async function deleteGame(req,res){

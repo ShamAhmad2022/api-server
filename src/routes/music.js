@@ -27,7 +27,8 @@ async function updateMusic(req, res){
     const id = req.params.id;
     const obj = req.body;
     const music = await Music.update(obj, {where: {id}});
-    res.status(202).json(music);
+    const updatedMusic = await Music.findOne({ where:{id:id}});
+    res.status(202).json(updatedMusic);
 }
 
 async function deleteMusic(req,res){
