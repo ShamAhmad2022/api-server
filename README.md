@@ -46,7 +46,6 @@ PORT - 3000
             "updatedAt": "2023-06-19T19:52:06.678Z"
         }
     ]
-
     ```
 * Endpoint: /game
 
