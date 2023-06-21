@@ -2,11 +2,11 @@
 ## Express REST API
 Author: Sham Al-Jalam
 
-* deployed application : [https://api-server-5vp7.onrender.com](https://api-server-5vp7.onrender.com)
+* deployed application : [https://api-server-5vp7.onrender.com/](https://api-server-5vp7.onrender.com/)
 
 * Github actions: [https://github.com/ShamAhmad2022/api-server/actions](https://github.com/ShamAhmad2022/api-server/actions)
 
-*  pull request: [https://github.com/ShamAhmad2022/api-server/pull/2](https://github.com/ShamAhmad2022/api-server/pull/2)
+*  pull request: [https://github.com/ShamAhmad2022/api-server/pull/4](https://github.com/ShamAhmad2022/api-server/pull/4)
 
 ### Setup:
 .env requirements:
@@ -208,5 +208,5 @@ PORT - 3000
 ### code review
 * Who was your partner? Farah
 * What was your key takeaway? how to fork a repo in github
-* Share the link to your PR request. https://github.com/ShamAhmad2022/api-server-1
+* Share the link to your PR request. https://github.com/FarrahYasin/api-server/pull/4
 * Share the link to their PR request. https://github.com/ShamAhmad2022/api-server/pull/5
