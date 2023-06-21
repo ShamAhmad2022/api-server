@@ -111,6 +111,33 @@ PORT - 3000
     ]
     ```
 
+* Endpoint: /universitydepartments/1
+
+    * Returns Object
+    ```Js
+    {
+        "id": 1,
+        "name": "Zarqaa",
+        "createdAt": "2023-06-21T19:11:04.908Z",
+        "updatedAt": "2023-06-21T19:11:04.908Z",
+        "departments": [
+            {
+                "id": 2,
+                "name": "IT",
+                "universityID": 1,
+                "createdAt": "2023-06-21T19:11:55.872Z",
+                "updatedAt": "2023-06-21T19:11:55.872Z"
+            },
+            {
+                "id": 3,
+                "name": "AI",
+                "universityID": 1,
+                "createdAt": "2023-06-21T19:12:05.240Z",
+                "updatedAt": "2023-06-21T19:12:05.240Z"
+            }
+        ]
+    }
+    ```
 
 * server errors
 
