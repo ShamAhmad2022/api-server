@@ -1,7 +1,6 @@
 'use strict';
-
 const department = (sequelize, DataTypes) => sequelize.define('department', {
-        name: {
+    name: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -10,6 +9,5 @@ const department = (sequelize, DataTypes) => sequelize.define('department', {
             allowNull: false
         }
     })
-
 
 module.exports = department;

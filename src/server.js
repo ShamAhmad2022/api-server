@@ -43,8 +43,8 @@ app.use(serverError);
 function start(port) {
   app.listen(port, () => console.log(`Up an running on port: ${port}`));
 }
-
+//export start function and app 
 module.exports = {
-  start,
+  start,   //export this function to use it in index.js
   app
 }
