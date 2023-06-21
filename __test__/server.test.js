@@ -110,4 +110,68 @@ describe('game endoints test', () => {
       expect(res.status).toBe(204);
     })
   
+})
+
+
+describe('university endoints test', () => {
+  it('Create a record using POST', async () => {
+    const res = await req.post('/university').send({
+        name: "Al-Zarqaa"
+    });
+    const university = JSON.parse(res.text);
+    expect(res.status).toBe(201);
+    expect(university.name).toEqual('Al-Zarqaa');
+  });
+
+  it('Read a list of records using GET', async () => {
+    const res = await req.get('/university');
+    expect(res.status).toBe(200);
   })
+
+  it('Read a record using GET', async () => {
+    const res = await req.get('/university/1');
+    expect(res.status).toBe(200);
+  })
+
+  it('Update a record using PUT', async () => {
+    const res = await req.put('/university/1');
+    expect(res.status).toBe(202);
+  })
+
+  it('Destroy a record using DELETE', async () => {
+    const res = await req.delete('/university/1');
+    expect(res.status).toBe(204);
+  })
+
+})
+
+describe('department endoints test', () => {
+  it('Create a record using POST', async () => {
+    const res = await req.post('/department').send({
+      name: "IT",
+      universityID: 1
+    });
+    expect(res.status).toBe(201);
+  });
+
+  it('Read a list of records using GET', async () => {
+    const res = await req.get('/department');
+    expect(res.status).toBe(200);
+  })
+
+  it('Read a record using GET', async () => {
+    const res = await req.get('/department/1');
+    expect(res.status).toBe(200);
+  })
+
+  it('Update a record using PUT', async () => {
+    const res = await req.put('/department/1');
+    expect(res.status).toBe(202);
+  })
+
+  it('Destroy a record using DELETE', async () => {
+    const res = await req.delete('/department/1');
+    expect(res.status).toBe(204);
+  })
+  
+})

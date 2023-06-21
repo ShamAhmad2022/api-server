@@ -69,6 +69,48 @@ PORT - 3000
     ]
     ```
 
+* Endpoint: /university
+
+    * Returns Object
+    ```Js
+    [
+        {
+            "id": 1,
+            "name": "Zaraa",
+            "createdAt": "2023-06-21T18:49:41.828Z",
+            "updatedAt": "2023-06-21T18:49:41.828Z"
+        },
+        {
+            "id": 2,
+            "name": "Balqaa",
+            "createdAt": "2023-06-21T18:49:47.298Z",
+            "updatedAt": "2023-06-21T18:49:47.298Z"
+        }
+    ]
+    ```
+
+* Endpoint: /department
+
+    * Returns Object
+    ```Js
+    [
+        {
+            "id": 1,
+            "name": "It",
+            "universityID": 1,
+            "createdAt": "2023-06-21T18:50:23.614Z",
+            "updatedAt": "2023-06-21T18:50:23.614Z"
+        },
+        {
+            "id": 2,
+            "name": "art",
+            "universityID": 1,
+            "createdAt": "2023-06-21T18:50:32.099Z",
+            "updatedAt": "2023-06-21T18:50:32.099Z"
+        }
+    ]
+    ```
+
 
 * server errors
 
@@ -114,8 +156,30 @@ PORT - 3000
 
 **select certain game** : /game/id
 
+**create new university** : /university
+
+**edit a certain university** : /university/id
+
+**delete certain university** : /university/id
+
+**select certain university** : /university/id
+
+**create new department** : /department
+
+**edit a certain department** : /department/id
+
+**delete certain department** : /department/id
+
+**select certain department** : /department/id
+
 ### Test:
 * Unit Test: npm test
 
 ### WRRC
 ![](./imags/WRRClab03.jpg)
+
+### code review
+* Who was your partner?
+* What was your key takeaway?
+* Share the link to your PR request.
+* Share the link to their PR request.

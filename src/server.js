@@ -11,7 +11,8 @@ const notFoundPage = require('./error-handlers/404');
 const serverError = require('./error-handlers/500');
 const musicRouter = require('../src/routes/music')
 const gamesRouter = require('../src/routes/games')
-
+const universityRouter = require('./routes/university');
+const departmentRouter = require('./routes/department');
 
 app.get('/', homeHandler)
 app.get('/intentionalError', intentionalError);
@@ -32,6 +33,8 @@ function intentionalError(req, res, next) {
 
 app.use(musicRouter);
 app.use(gamesRouter);
+app.use(universityRouter);
+app.use(departmentRouter);
 
 app.use('*', notFoundPage);
 app.use(serverError);
