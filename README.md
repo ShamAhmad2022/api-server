@@ -206,7 +206,7 @@ PORT - 3000
 ![](./imags/WRRClab03.jpg)
 
 ### code review
-* Who was your partner?
-* What was your key takeaway?
-* Share the link to your PR request.
-* Share the link to their PR request.
+* Who was your partner? Farah
+* What was your key takeaway? how to fork a repo in github
+* Share the link to your PR request. https://github.com/ShamAhmad2022/api-server-1
+* Share the link to their PR request. https://github.com/ShamAhmad2022/api-server/pull/5
